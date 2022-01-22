@@ -1,3 +1,6 @@
+:root{
+    --main-font-color: #535351;
+}
 *{
     padding: 0;
     margin: 0;
@@ -6,7 +9,9 @@
 
 html{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    color: var(--main-font-color);
+    line-height: 1.2;
 
 }
 .header-nav{
@@ -15,7 +20,7 @@ html{
     overflow: hidden;
     background-color: white;
     display: flex;
-    
+    position: fixed;
     justify-items: space-between;
     align-items: center;
 }
@@ -88,4 +93,91 @@ nav ul a{
     padding: 8px 0px;
     font-family: "Ubuntu", sans-serif;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+} 
+.practice{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    
+    
+}
+.practice-sideA{
+    width: 55%;
+    height: auto;
+    margin: 32px 24px;
+}
+.practice-pic{
+    width: 100%;
+    height: auto;
+}
+.practice-title{
+    margin-top: 32px;
+}
+.quote{
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.practice-sideB{
+    width: 40%;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(3, 30%);
+    gap: 5px;
+    
+}
+#rows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: #d4d3c3 1px solid;
+    
+}
+.row-A{
+    margin-top: 32px;
+}
+.orientation-pic, 
+.campus-pic, 
+.guest-lecture-pic{
+    width: 35%;
+    height: auto;
+    margin: 16px;
+    
+}
+.row-content{
+    
+    align-self: center;
+}
+.row-C{
+    background-color: #c5c5c1;
+}
+
+.start-learning{
+    background-color: #d4d3c3;
+    padding-top: 32px;
+    
+}
+.learning-title{
+    text-align: center;
+    margin: 32px 0px;
+}
+.learning-slides{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 32px 72px;
+
+}
+.class-slides{
+    background-color: white;
+    width: 30%;
+    
+
+}
+.slide-images{
+    height: auto;
+    width: 100%;
 }
